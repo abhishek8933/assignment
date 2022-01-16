@@ -1,0 +1,21 @@
+#include <stdio.h>
+int magic(int a){
+    
+    int base=5;
+    int ans=0;
+    while(a>0){
+        int last=a&1;
+       a=a>>1;
+       ans+=last*base;
+        base*=5;
+    }
+    return ans;
+}
+
+int main() {
+    int n=3;
+    int mag=magic(n);
+    printf("%d",mag);
+    
+    return 0;
+}

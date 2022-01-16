@@ -1,0 +1,21 @@
+/ Online C compiler to run C program online
+#include <stdio.h>
+//program to find whether a given number is a power of 2 or not
+int power(int a){
+    if((a&(a-1))==0){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+int main() {
+   int n=127;
+   if(power(n)){
+       printf("power of 2");
+   }
+   else{
+       printf("nope");
+   }
+    return 0;
+}
